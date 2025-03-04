@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王佳琪 | 水利工程新锐人才</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2A5C82;
+            --secondary: #5DA0C7;
+            --accent: #FF6B6B;
+        }
+        body {
+            font-family: 'Helvetica Neue', system-ui, sans-serif;
+            line-height: 1.8;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            color: #444;
+        }
+        .container {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 40px 20px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin: 20px auto;
+            background: url('https://i.pravatar.cc/150?img=3') center/cover;
+        }
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 15px;
+            background: rgba(255,255,255,0.9);
+            margin-top: -30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s;
+        }
+        .contact-item:hover {
+            transform: translateY(-3px);
+        }
+        .section {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child { border: none }
+        h2 {
+            color: var(--primary);
+            position: relative;
+            padding-left: 20px;
+        }
+        h2:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 80%;
+            background: var(--accent);
+        }
+        .progress-bar {
+            height: 8px;
+            background: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .progress-fill { 
+            height: 100%;
+            background: var(--secondary);
+            width: 75%;
+            transition: width 1s ease;
+        }
+        .card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid var(--primary);
+        }
+        @media (max-width: 768px) {
+            .container { margin: 20px 10px }
+            header { padding: 40px 15px }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar"></div>
+            <h1>王佳琪</h1>
+            <p>水利工程专业 | 华北水利水电大学</p >
+        </header>
+
+        <div class="contact-bar">
+            <a href=" " class="contact-item">
+                <i class="fas fa-mobile-alt"></i>
+                136-****-7230
+            </a >
+            <a href="mailto:3103498973@qq.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                3103498973@qq.com
+            </a >
+            <div class="contact-item">
+                <i class="fas fa-user-shield"></i>
+                共青团员
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>核心优势</h2>
+            <div class="card">
+                <h3>🏆 专业前20% | CET-4 586分</h3>
+                <p>连续两年获得校级奖学金，熟练掌握AutoCAD、Revit等专业软件</p >
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>成长轨迹</h2>
+            <div class="card">
+                <h3>📚 华北水利水电大学</h3>
+                <p>2021-2025 | 水利水电工程专业</p >
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p>主修课程：水工建筑物、水利工程施工、工程力学</p >
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>实践经历</h2>
+            <div class="card">
+                <h3>👥 学生会实践部</h3>
+                <p>策划执行3场校级活动，协调20+学生团队</p >
+                <ul>
+                    <li>校园开放日总协调人</li>
+                    <li>水利创新大赛组织者</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
